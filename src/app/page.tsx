@@ -12,7 +12,7 @@ export default function Home() {
     const results = await fetch('/api/scraper', {
       method: 'POST',
       body: JSON.stringify({
-        siteUrl: 'https://spacejelly.dev'
+        siteUrl: 'https://www.qu.edu.qa/en-us/'
       })
     }).then(r => r.json())
     setResults(results)
@@ -27,7 +27,7 @@ export default function Home() {
             Click the button to test out your new scraper.
           </p>
           <p className="text-sm text-zinc-700 italic mb-6">
-            Psst. Make sure you <a className="text-blue-500 underline" href="https://spacejelly.dev" target="_blank">build it first</a>!
+            Psst. Make sure you <a className="text-blue-500 underline" href="https://www.qu.edu.qa/en-us/" target="_blank">build it first</a>!
           </p>
           <p className="mb-6">
             <button className="btn btn-primary" onClick={handleOnClick}>Get Started</button>
